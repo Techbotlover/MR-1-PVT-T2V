@@ -23,14 +23,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7182288019:AAHi94uJ_TK3pMsC-5obzt7CnnkeY9HUj_Y",
+             bot_token= "6401835615:AAFA-a_AU7BI69ZRzBcWgWf9yGiEcPX_NIk",
              api_id= 24119778,
              api_hash= "cca11ca97dd8683d65ca1beb62baceb1")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"𝐇𝐞𝐥𝐥𝐨 𝐉𝐚𝐚𝐧💚 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n𝐏𝐫𝐞𝐬𝐬 /Radha")
+    editable = await m.reply_text(f"𝐇𝐞𝐥𝐥𝐨 𝐉𝐚𝐚𝐧...💚 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n𝐏𝐫𝐞𝐬𝐬✒ /Radha")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["Radha"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"**𝐇𝐞𝐲👀 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend 𝐓𝐗𝐓 file**")
+    editable = await m.reply_text(f"**𝐇𝐞𝐲 𝐉𝐚𝐚𝐧..👀 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend 𝐓𝐗𝐓📝 file**")
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
@@ -73,12 +73,12 @@ async def account_login(bot: Client, m: Message):
         for i in content:
             links.append(i.split("://", 1))
    
-    await editable.edit(f"Total 𝐋𝐢𝐧𝐤𝐬 found are **{len(links)}**\n\nSend From where you want to download 𝐈𝐧𝐭𝐢𝐚𝐥 is **1**")
+    await editable.edit(f"Total 𝐋𝐢𝐧𝐤𝐬🔗 found are **{len(links)}**\n\nSend From where you want to download 𝐈𝐧𝐭𝐢𝐚𝐥🤷‍♀ is **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Enter 𝐁𝐀𝐓𝐂𝐇 Name or send d for grabing from text filename.**")
+    await editable.edit("**Enter 𝐁𝐀𝐓𝐂𝐇🖍️ Name or send d for grabing from text filename.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -87,7 +87,7 @@ async def account_login(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter 𝟑𝟔𝟎,𝟒𝟖𝟎,𝟕𝟐𝟎 resolution**")
+    await editable.edit("**Enter 𝟑𝟔𝟎,𝟒𝟖𝟎,𝟕𝟐𝟎,𝟏𝟎𝟖𝟎 resolution**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -109,7 +109,7 @@ async def account_login(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter 𝐘𝐨𝐮𝐫 𝐍𝐚𝐦𝐞😇 or send `de` for use default**")
+    await editable.edit("**Enter 𝐘𝐨𝐮𝐫 𝐍𝐚𝐦𝐞😘 or send `de` for use default**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -169,8 +169,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) ㅤ𓆩🖤𓆪 ❀ 𝐑α∂ɦα.mkv\n**[📌]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤** {b_name}\n\n**[📥]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐲 ➤ {CR}**'
-                cc1 = f'** {str(count).zfill(3)}.** {name1} ㅤ𓆩🖤𓆪 ❀ 𝐑α∂ɦα.pdf \n**[📌]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤**{b_name}\n\n**[📥]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐲 ➤ {CR}**'
+                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) ㅤ𓆩🖤𓆪 ❀ 𝐑α∂ɦα.mkv\n**[📒]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤** {b_name}\n\n**[🚦]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐘 ➤ {CR}**'
+                cc1 = f'** {str(count).zfill(3)}.** {name1} 𝐊ɾísɧɳα ❀.pdf \n**[📒]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤**{b_name}\n\n**[🚦]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐘 ➤ {CR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**⏳𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆⏳ ➣𓆩🖤𓆪 ❀ 𝐑α∂ɦα**\n\n** 𝐕𝐢𝐝𝐞𝐨 𝐍𝐚𝐦𝐞 ➣** `{name}\n𝐐𝐮𝐚𝐥𝐢𝐭𝐲 ➣ {raw_text2}`\n**𝐋𝐢𝐧𝐤➣**`{url}`\n\n **𝐌𝐚𝐝𝐞 𝐁𝐘»𓆩🖤𓆪 ❀ 𝐑α∂ɦα 𝐊ɾísɧɳα ❀**")
+                    prog = await m.reply_text(f"**🚨⏳𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆⏳🚨 ➣ @zone_sr**\n\n** 🎥𝐕𝐢𝐝𝐞𝐨 𝐍𝐚𝐦𝐞 ➣** `{name}\n🔮𝐐𝐮𝐚𝐥𝐢𝐭𝐲 ➣ {raw_text2}`\n**🖇️𝐋𝐢𝐧𝐤 ➣**`{url}`\n\n **❣️𝐌𝐚𝐝𝐞» 𓆩🖤𓆪 ❀ 𝐑α∂ɦα 𝐊ɾísɧɳα ❀**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -211,7 +211,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝐃𝐎𝐍𝐄 𝐁𝐘 𝐑𝐀𝐃𝐇𝐀 𝐁𝐎𝐓💜")
+    await m.reply_text("❣️𝐃𝐎𝐍𝐄 𝐁𝐘 𝐑𝐀𝐃𝐇𝐀❣️")
 
 
 bot.run()
