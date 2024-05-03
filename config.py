@@ -4,11 +4,11 @@ API_ID = API_ID = 24932120
 
 API_HASH = os.environ.get("API_HASH", "b16b8704b5c839ed24f4ed5824978a3b")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6900662254:AAFMqQTWLqinS1Rc4KzJv2tIXFRxqpCFB9k")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7022726343:AAGKhqWu4goPHLI0nCLiIVBVHUjx8EzVFRk")
 
 PASS_DB = int(os.environ.get("PASS_DB", "721"))
 
-OWNER = int(os.environ.get("OWNER", 5930830814))
+OWNER = int(os.environ.get("OWNER", 5729628706))
 
 LOG = -1002054181760
 
