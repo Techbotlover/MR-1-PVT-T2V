@@ -23,14 +23,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7110652733:AAHLd0OCRl17j7WDqmnLoWzEqmv3CzcWQrI",
+             bot_token= "7241359123:AAEfrhbTDJ_YfdqzqELyFeI-0R6duWR-AFQ",
              api_id= 24932120,
              api_hash= "b16b8704b5c839ed24f4ed5824978a3b")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"𝐇𝐞𝐥𝐥𝐨 𝐉𝐚𝐚𝐧...💚 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n𝐏𝐫𝐞𝐬𝐬✒ /Radha")
+    editable = await m.reply_text(f"𝐇𝐞𝐥𝐥𝐨 𝐉𝐚𝐚𝐧...💚 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n𝐏𝐫𝐞𝐬𝐬 /Radhaa")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Radha"]) & filters.user(ADMINS))
+@bot.on_message(filters.command(["Radhaa"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**𝐇𝐞𝐲 𝐉𝐚𝐚𝐧..👀 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend 𝐓𝐗𝐓📝 file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -169,8 +169,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) ㅤ𓆩🖤𓆪 ❀ 𝐑α∂ɦα.mkv\n**[📒]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤** {b_name}\n\n**[🚦]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐘 ➤ {CR}**'
-                cc1 = f'** {str(count).zfill(3)}.** {name1} 𝐊ɾísɧɳα ❀.pdf \n**[📒]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤**{b_name}\n\n**[🚦]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐘 ➤ {CR}**'
+                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) ❀ 𝐑𝐀𝐃𝐇𝐀 ❀.mkv\n**[📕]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤** {b_name}\n\n**[🚦]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐘 ➤ {CR}**'
+                cc1 = f'** {str(count).zfill(3)}.** {name1} ❀ 𝐑𝐀𝐃𝐇𝐀 ❀.pdf \n**[📕]𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 ➤**{b_name}\n\n**[🚦]𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐝 𝐁𝐘 ➤ {CR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**🚨⏳𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆⏳🚨 ➣ @zone_sr**\n\n** 🎥𝐕𝐢𝐝𝐞𝐨 𝐍𝐚𝐦𝐞 ➣** `{name}\n🔮𝐐𝐮𝐚𝐥𝐢𝐭𝐲 ➣ {raw_text2}`\n**🖇️𝐋𝐢𝐧𝐤 ➣**`{url}`\n\n **❣️𝐌𝐚𝐝𝐞» 𓆩🖤𓆪 ❀ 𝐑α∂ɦα 𝐊ɾísɧɳα ❀**")
+                    prog = await m.reply_text(f"**📥..𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆..📥**\n\n** 🎥𝐕𝐢𝐝𝐞𝐨 𝐍𝐚𝐦𝐞 ➣** `{name}\n🔮𝐐𝐮𝐚𝐥𝐢𝐭𝐲 ➣ {raw_text2}`\n**🖇️𝐋𝐢𝐧𝐤 ➣**`{url}`\n\n **❣️𝐌𝐚𝐝𝐞» ❀ 𝐑𝐀𝐃𝐇𝐀 ❀ ❀**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -211,7 +211,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("❣️𝐃𝐎𝐍𝐄 𝐁𝐘 𝐑𝐀𝐃𝐇𝐀❣️")
+    await m.reply_text("❣️❣️┅ 𝐃𝐎𝐍𝐄 ┅❣️❣️")
 
 
 bot.run()
