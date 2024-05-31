@@ -30,7 +30,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"𝐇𝐞𝐥𝐥𝐨 𝐉𝐚𝐚𝐧...💚 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n𝐏𝐫𝐞𝐬𝐬 /Radhaa")
+    editable = await m.reply_text(f"𝐇𝐞𝐥𝐥𝐨 𝐉𝐚𝐚𝐧...💚 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n𝐏𝐫𝐞𝐬𝐬 /Radha")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Radhaa"]) & filters.user(ADMINS))
+@bot.on_message(filters.command(["Radha"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**𝐇𝐞𝐲 𝐉𝐚𝐚𝐧..👀 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend 𝐓𝐗𝐓📝 file**")
     input: Message = await bot.listen(editable.chat.id)
